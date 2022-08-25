@@ -1,0 +1,9 @@
+services:
+  dev:
+    network_mode: bridge
+    image: langdonglei/dev
+    container_name: spreadsheet
+    hostname: spreadsheet
+    restart: always
+    volumes:
+      - .:/www
